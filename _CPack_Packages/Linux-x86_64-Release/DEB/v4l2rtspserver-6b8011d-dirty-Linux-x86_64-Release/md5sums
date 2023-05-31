@@ -1,0 +1,4 @@
+5aaa324309e9a014152eef0d8a44327d  lib/systemd/system/v4l2rtspserver.service
+764996608c80e5e851d81c3130440980  usr/local/bin/v4l2rtspserver
+2be47d0c1734828b2413df08dd6517ac  usr/local/share/v4l2rtspserver/index.html
+db61d6daf21df7492e1f2805fc48d82b  usr/local/share/v4l2rtspserver/hls.js/dist/hls.light.min.js

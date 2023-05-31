@@ -1,0 +1,10 @@
+Package: v4l2rtspserver
+Version: 6b8011d-dirty
+Section: devel
+Priority: optional
+Architecture: amd64
+Depends: livemedia-utils,libasound2
+Installed-Size: 3199
+Maintainer: Michel Promonet
+Description: v4l2rtspserver built using CMake
+

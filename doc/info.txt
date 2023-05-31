@@ -1,0 +1,30 @@
+录屏软件：  kazam 
+
+
+录制
+ publish "ad_record_video" "{\"id\":\"llb4\",\"status\":\"true\"}"  
+回播
+ publish "ad_play_video"  "{\"id\":\"llb4\",\"status\":\"true\"}" 
+从指定时间开始回播， 单位：秒
+ publish "ad_play_video" "{\"id\":\"llb4\",\"status\":\"true\",\"start\":\"15\"}"  
+ publish "ad_play_video" "{\"id\":\"llb3\",\"status\":\"true\",\"start\":\"2023-3-8 16:36:19\"}"     //2023/02/15 update
+ 生成image
+ publish "ad_play_video"  "{\"id\":\"test9\",\"status\":\"image\"}" 
+
+ 时间同步   
+ publish "apollo_record_calibration_time_pub"  "{\"calibration\":\"1673251275919351000\"}" 
+
+
+
+Branch 说明：
+
+ replay_try_2  , working on 
+ pre_try  , 提前录制测试，功能就绪 待merge。
+
+
+
+
+
+ 1669798125066
+ 1669798125066
+ id =20221222112500, tm = 1671679500327:video5, device_name=video5

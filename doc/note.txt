@@ -1,0 +1,42 @@
+
+
+jpeglib.h: No such file or directory
+	sudo apt-get install libjpeg-dev
+	
+opencv2/opencv.hpp: No such file or directory
+	sudo apt-get install libopencv-dev  ! not work
+	sudo ln -s /usr/include/opencv4/opencv2 /usr/include/
+
+boost/filesystem.hpp: No such file or directory
+	apt-get install libboost-filesystem-dev
+	
+error: ‘CV_CAP_PROP_FRAME_WIDTH’ was not declared in this scope
+	https://stackoverflow.com/questions/56572665/opencv4-error-cv-cap-prop-frame-width-was-not-declared-in-this-scope
+	replace "CV_CAP_" with "cv::CAP_"
+	
+/usr/bin/ld: lib/libx264.so.164: error adding symbols: file in wrong format
+	https://blog.csdn.net/qq21497936/article/details/123632074
+	https://blog.csdn.net/weixin_39406189/article/details/129042016   **** build 	
+	
+*** build redis++ need use c++ 11 ***
+	
+ ****** begin: bellow issue occured by CMakeCache.txt ***********
+ we need 
+ 	1, make clean 
+ 	2, remove CMakeCache.txt 
+ 	3, cmake .
+ 	4, make
+ *********** end: bellow issue occured by CMakeCache.txt *********** 	
+ 
+	No rule to make target '/usr/lib/x86_64-linux-gnu/libasound.so'
+		replace "x86_64-" with "aarch64-"
+	
+	open-ssl
+		sudo apt-get install g++ gcc libssl-dev make
+	
+	/usr/bin/ld: cannot find -lOpenSSL::SSL
+		sudo apt-get install openssl
+		sudo apt-get install libssl-dev
+	
+
+

@@ -1,0 +1,4 @@
+/lib/systemd/system/v4l2rtspserver.service
+/usr/local/bin/v4l2rtspserver
+/usr/local/share/v4l2rtspserver/index.html
+/usr/local/share/v4l2rtspserver/hls.js/dist/hls.light.min.js

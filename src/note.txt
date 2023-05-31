@@ -1,0 +1,3 @@
+g++ -o jpeg jpeg2.cpp -ljpeg
+
+https://www.it1352.com/2687048.html
