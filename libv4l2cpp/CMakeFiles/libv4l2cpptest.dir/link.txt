@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/libv4l2cpptest.dir/main.cpp.o  -o libv4l2cpptest   -L/home/demo/v4l2rtspserver/lib  -Wl,-rpath,/home/demo/v4l2rtspserver/lib liblibv4l2cpp.a -lopencv_core -lopencv_video -lopencv_videoio -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lboost_system -lboost_filesystem -ljpeg -lx264 -lredis++ -lhiredis -pthread 

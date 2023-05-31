@@ -365,9 +365,9 @@ size_t V4l2MmapDevice::readInternal(char* buffer, size_t bufferSize)
 		    unsigned char *jpg_p=(unsigned char *)malloc(m_height*m_width*3);
 			int ret = yuv_to_jpeg(m_width,m_height,m_height*m_width*3,(unsigned char *)m_buffer[buf.index].start,jpg_p,80);
 			sprintf(jpg_file_name,"%d.jpg",jpg_cnt++);
-			// jpg_file=fopen(jpg_file_name,"wb");
-			// fwrite(jpg_p,1,ret,jpg_file);
-			// fclose(jpg_file);
+			jpg_file=fopen(jpg_file_name,"wb");
+			fwrite(jpg_p,1,ret,jpg_file);
+			fclose(jpg_file);
 		 
 			if(need_record){
 				mtx_record.lock();
